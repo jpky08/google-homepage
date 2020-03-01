@@ -10,9 +10,9 @@
     
     #logo-search-contain
     {
-        padding: 25vh 0;
+        padding-top: 109px;
     }
-    
+
     #logo {
         display: block;
         margin: auto;
@@ -32,9 +32,34 @@
         height: 24px;
     }
 
+    #searchbar:hover {
+        box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+        border-color: rgba(223,225,229,0);
+    }
+
     #search-button {
-        margin-top: 15px;
-        margin-right: 10px;
+        background-color: #f2f2f2;
+        border: 1px solid #f2f2f2;
+        border-radius: 4px;
+        color: #5F6368;
+        font-family: arial,sans-serif;
+        font-size: 14px;
+        margin: 11px 4px;
+        padding: 0 16px;
+        line-height: 27px;
+        height: 36px;
+        min-width: 54px;
+        text-align: center;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    #search-button:hover {
+        box-shadow: 0 1px 1px rgba(0,0,0,0.1);
+        background-image: -webkit-linear-gradient(top,#f8f8f8,#f1f1f1);
+        background-color: #f8f8f8;
+        border: 1px solid #c6c6c6;
+        color: #222;
     }
     #leftdiv {
         position: relative;
@@ -65,6 +90,14 @@
         font-size: 13px;
         padding-left: 15px;
         opacity: 0.75;
+    }
+    #leftlinks:hover {
+        text-decoration: underline;
+    }
+
+    #rightlinks:hover {
+        text-decoration: underline;
+    }
     </style>
 </head>
 
@@ -83,7 +116,7 @@
         <div id="search-bar" align="center">
             <input type="text" size="70" id="searchbar">
             <div id="buttons" align="center">
-                <input type="button" value="Google Search" id="search-button"><input type="button" value="I'm Feeling Lucky">
+                <input type="button" value="Google Search" id="search-button"><input type="button" id="search-button" value="I'm Feeling Lucky">
             </div>
         </div>
     </div>
